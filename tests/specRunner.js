@@ -1,1 +1,1 @@
-require
+require(`./account.spec.js`);

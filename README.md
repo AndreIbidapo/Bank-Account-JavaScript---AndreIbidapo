@@ -4,11 +4,11 @@
 ## Domain Models
 
 ```
-| Objects | Properties    | Messages           | Outputs |
-| ------- | ------------- | ------------------ | ------- |
-| Balance | Credit@double | addCredit@double   | @Void   |
-|         |               |                    |         |
-|         | Debit@double  | removeDebit@double | @void   |
+| Objects      | Properties     | Messages           | Outputs |
+| ------------ | -------------- | ------------------ | ------- |
+| Account      | Balance@Number | Deposit@number     | @Void   |
+|              |                | Withdrawal         |         |
+| Transactions |                | removeDebit@double | @void   |
 ```
 
 
@@ -38,6 +38,7 @@ You'll work alone, and you'll also review your own code so you can practice refl
 **Given** a client makes a deposit of 1000 on 10-01-2012  
 **And** a deposit of 2000 on 13-01-2012  
 **And** a withdrawal of 500 on 14-01-2012  
+
 **When** she prints her bank statement  
 **Then** she would see
 
